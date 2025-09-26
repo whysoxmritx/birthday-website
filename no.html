@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblock Me!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* === MODIFIED for FULL BACKGROUND IMAGE === */
+            background-image: url("heart.jpeg"); /* Use your full image filename here */
+            background-color: #fce4ec; /* Light pink background color as a fallback */
+            background-repeat: no-repeat; /* DO NOT REPEAT THE IMAGE */
+            background-size: cover; /* This makes the image cover the entire background */
+            background-position: center center; /* Centers the image */
+            background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+            
+            color: #4a0026; /* Adjusted for better contrast on this specific background */
+            font-family: 'Indie Flower', cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #880e4f; /* A darker, richer pink/red for heading */
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite alternate;
+            /* Optional: Add a text shadow for better readability on busy backgrounds */
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5); 
+        }
+        p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin-bottom: 40px;
+            /* Optional: Add a text shadow for better readability */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+        #will_see {
+            background-color: #d81b60; /* Deep pink button */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 4px #a00040;
+            transition: all 0.2s ease;
+        }
+        #will_see:active {
+            box-shadow: 0 0 #a00040;
+            transform: translateY(4px);
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Then Unblock me 🥺</h1>
+    <p>Hooray! I knew you love me. Now, please unblock me so we can talk. Everything will be okay. 💕</p>
+    <div id="next">
+        <button class="btn" id="will_see" onclick="window.location.href='will_see.html'">
+            Will See
+        </button>
+    </div>
+</body>
+</html>
