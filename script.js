@@ -42,3 +42,11 @@ const willSeeBtn = document.getElementById("will_see");
 willSeeBtn.addEventListener("click", () => {
   window.location.href = "will_see.html";
 });
+// Get the "No" button element
+const noButton = document.getElementById('no');
+
+// Add a click event listener to the "No" button
+noButton.addEventListener('click', () => {
+    // Navigate the user to the no.html page
+    window.location.href = 'no.html';
+});
